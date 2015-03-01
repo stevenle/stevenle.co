@@ -1,0 +1,93 @@
+$text-color: #333;
+$ubuntu-mono: 'Ubuntu Mono';
+$normal: 400;
+$bold: 700;
+$sz: 10px;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $text-color;
+  font-family: $ubuntu-mono;
+}
+
+header {
+  padding: 2*$sz 0;
+
+  .sl-avatar {
+    border-radius: 50%;
+    display: block;
+  }
+
+  h1 {
+    margin: 1*$sz 0;
+  }
+}
+
+.sl-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 2*$sz;
+}
+
+.sl-main {
+  h1,
+  h2,
+  p {
+    margin-bottom: 1*$sz;
+  }
+}
+
+.sl-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.sl-github {
+    background-image: url(/images/github.svg);
+  }
+
+  &.sl-twitter {
+    background-image: url(/images/twitter.svg);
+  }
+}
+
+footer {
+  padding: 2*$sz 0;
+
+  ul.sl-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    li + li {
+      margin-left: 1*$sz;
+    }
+  }
+
+  .sl-icon {
+    display: inline-block;
+    height: 32px;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    width: 32px;
+  }
+
+  .sl-icon:hover {
+    opacity: 0.9;
+  }
+}

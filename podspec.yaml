@@ -1,0 +1,18 @@
+project: stevenle/stevenle.co
+grow_version: 0.0.40
+
+static_dirs:
+- static_dir: /static/root/
+  serve_at: /
+- static_dir: /static/css/
+  serve_at: /css/
+- static_dir: /static/images/
+  serve_at: /images/
+- static_dir: /static/js/
+  serve_at: /js/
+
+preprocessors:
+- kind: sass
+  sass_dir: /source/sass/
+  out_dir: /static/css/
+  output_style: compressed
