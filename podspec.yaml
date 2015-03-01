@@ -16,3 +16,8 @@ preprocessors:
   sass_dir: /source/sass/
   out_dir: /static/css/
   output_style: compressed
+
+deployments:
+  default:
+    destination: local
+    out_dir: /usr/local/www/stevenle.co
