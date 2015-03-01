@@ -18,6 +18,6 @@ preprocessors:
   output_style: compressed
 
 deployments:
-  default:
+  stevenle.co:
     destination: local
     out_dir: /usr/local/www/stevenle.co

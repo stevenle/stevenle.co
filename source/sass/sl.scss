@@ -46,6 +46,10 @@ header {
   p {
     margin-bottom: 1*$sz;
   }
+
+  h2 {
+    text-transform: lowercase;
+  }
 }
 
 .sl-icon {
