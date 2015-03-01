@@ -26,7 +26,7 @@ header {
 
   .sl-avatar {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
   }
 
   h1 {
@@ -73,6 +73,10 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    a {
+      display: inline-block;
+    }
 
     li {
       display: inline-block;
